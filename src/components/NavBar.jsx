@@ -1,4 +1,4 @@
-import {navlinks} from "../constants";
+import {navLinks} from "../constants";
 
 export const NavBar = () => {
     return (
@@ -6,8 +6,10 @@ export const NavBar = () => {
             <nav>
                 <img src="/logo.svg" alt="apple logo"/>
                 <ul>
-                    {navlinks.map(({label}) => (
-                        <li key={label}><a href={label}>{label}</a></li>
+                    {navLinks.map(({ label, href, id }) => (
+                        <li key={id || href || label}>
+                            <a href={href || (id ? `#${id}` : `/${label.toLowerCase()}`)}>{label}</a>
+                        </li>
                     ))}
                 </ul>
                 <div className="flex-center gap-3">
