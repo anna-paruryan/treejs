@@ -1,10 +1,11 @@
 import {NavBar} from "./components/NavBar.jsx";
+import {Hero} from "./components/Hero.jsx";
 
 export const App = () => {
-   return (
-     <main>
-         <NavBar/>
-
-     </main>
-   );
- };
+    return (
+        <main>
+            <NavBar/>
+            <Hero/>
+        </main>
+    );
+};
