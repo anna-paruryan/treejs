@@ -43,3 +43,13 @@ git push
 🔹 Локальный review — нужен только git
 🔹 Review в GitHub — нужен git + GitHub repo + установленный бот
 # command coderabbit
+
+## three.js
+🔹npm install  three @react-three/drei @react-three/fiber
+🔹npm i gsap @gsap/react
+🔹npm i react-responsive
+
+##  npx gltfjsx macbook-14.glb -T
+
+cd public/models/
+### gltfjsx — это утилита, которая преобразует GLB / GLTF 3D-модель → React-компонент для Three.js / React Three Fiber.
